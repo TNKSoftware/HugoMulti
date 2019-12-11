@@ -1,0 +1,8 @@
+{{ $c := "" }}
+{{ $ag := .Get 1 }}
+{{ if eq $ag "b" }}
+ {{ $c = "border" }}
+{{ end }}
+<div class="img-out">
+  <img class="{{ $c }}" src="../imgs/{{.Site.Language.Lang}}/{{ .Get 0 }}">
+</div>

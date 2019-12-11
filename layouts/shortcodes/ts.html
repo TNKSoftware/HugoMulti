@@ -1,0 +1,9 @@
+{{- $key := .Get 0 -}}
+{{- $lp := index .Site.Data .Page.Language.Lang -}}
+{{- $fn := index $lp .Page.File.BaseFileName -}}
+{{- if isset $fn $key -}}
+{{- $h := index $fn $key -}}
+{{- safeHTML $h -}}
+{{- else -}}
+{{- $key -}}
+{{- end -}}

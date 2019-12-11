@@ -1,0 +1,47 @@
+relativeurls = true
+uglyURLs = true
+hasCJKLanguage = true
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = true
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+publishDir = "release"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    staticDir = "static/en"
+    weight = 10
+    title = "Hugo Multilangage Template"
+    dateFormat = "Jan. 2, 2019"
+
+  [languages.ja]
+    languageName = "Japanese"
+    staticDir = "static/ja"
+    weight = 20
+    title = "Hugo多言語テンプレート"
+    dateFormat = "2019年01月02日"
+
+  [languages.zh]
+    languageName = "Chinese"
+    staticDir = "static/zh"
+    weight = 20
+    title = "Hugo多语言模板"
+    dateFormat = "2019年01月02日"
+
+[module]
+  [[module.mounts]]
+    lang = "en"
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    lang = "en"
+    source = "content_lang"
+    target = "content"
+  [[module.mounts]]
+    lang = "ja"
+    source = "content_lang"
+    target = "content"
+  [[module.mounts]]
+    lang = "zh"
+    source = "content_lang"
+    target = "content"

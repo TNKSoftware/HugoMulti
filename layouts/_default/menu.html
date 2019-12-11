@@ -1,0 +1,18 @@
+{{ $dict := index $.Site.Data .Page.Language.Lang }}
+{{ $menu := index $dict "menu" }}
+<!DOCTYPE html>
+<html lang="{{.Page.Language.Lang}}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+  </head>
+  <body>
+    {{index $menu "title"}}
+    {{ $pages := slice "item1" "item2" "item3" }}
+    <ul id="menulist">
+      {{ range $pi, $pv := $pages }}
+      <li class="mitem" data-item="{{$pv}}">{{index $menu $pv}}</li>
+      {{ end }}
+    </ul>
+  </body>
+</html>

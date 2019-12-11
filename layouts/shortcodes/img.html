@@ -1,0 +1,7 @@
+{{ $b := "" }}
+{{if isset .Params "b" }}
+{{ $b = "class=\"border\"" }}
+{{end}}
+<div class="img-out">
+  <img {{ $b }} src="../imgs/{{ .Get "src" }}">
+</div>

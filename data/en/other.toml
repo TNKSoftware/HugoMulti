@@ -1,0 +1,4 @@
+title = "Template reference example"
+about = '''
+This is an example of applying a non-standard template layout. Here the “other” template is applied.
+'''

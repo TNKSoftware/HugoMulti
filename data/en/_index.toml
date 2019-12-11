@@ -1,0 +1,6 @@
+title = "About this"
+about = '''
+This is the most basic example of a multilingual template. The character string recorded in Key-Value format is reflected in the toml (or json, yaml) file.
+'''
+img = "You can specify an image for each language by preparing ShortCode."
+border = "Adding \"b\" to the parameter adds \"border\" class."

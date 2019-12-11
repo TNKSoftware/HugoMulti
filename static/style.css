@@ -1,0 +1,66 @@
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+  font-size:10.5pt;
+}
+
+main{
+  padding-left:1.5em;
+  padding-bottom: 2em;
+}
+
+h1{
+  font-size: 18pt;
+}
+
+h2{
+  font-size: 15pt;
+}
+
+h3 {
+  font-size:11.5pt;
+}
+
+h1, h2, h3{
+  color:#091053;
+  margin-left:-0.5em;
+  margin-bottom:0.1em;
+}
+
+h3{
+  color:#05270c; 
+}
+
+.img-out{
+  width:100%;
+  text-align:center;
+}
+
+.img-out img{
+  max-height: 8cm;
+  object-fit: contain;
+}
+
+.highlight pre{
+  padding:1em;
+  display:inline-block;
+  line-height: 1.4em;
+}
+
+img.border{
+  border:1px solid #444444;
+}
+
+img.char{
+  height:1em;
+}
+
+table{
+  border-collapse: collapse;
+}
+th{
+  background-color:lightgray;
+}
+th, td{
+  padding:0.5em;
+  border:1px solid #444444;
+}
